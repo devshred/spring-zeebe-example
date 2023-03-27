@@ -4,7 +4,7 @@ This shows how to set up and run Camunda Platform 8 locally.
 ## start infrastructure
 ```shell
 cd infrastructure
-./start-cluster.sh
+./start.sh
 ```
 
 ## start _"application"_
@@ -16,5 +16,7 @@ mvn spring-boot:run
 [trigger HTTP request](src/test/http/requests.http)
 
 ## watch dashboards
-* add operate.local to /etc/hosts
-* open http://operate.local
+* open http://localhost:8081/ (demo/demo)
+
+## perform user tasks
+* open http://localhost:8082/ (demo/demo)
